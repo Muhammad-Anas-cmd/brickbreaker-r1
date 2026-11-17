@@ -30,3 +30,14 @@ REWARD_LIFE_LOST = -10.0
 REWARD_GAME_OVER = -20.0
 
 LEFT, STAY, RIGHT = 0, 1, 2   # the AI's three actions
+
+# --- Learning hyperparameters ---
+ALPHA = 0.1             # learning rate
+GAMMA = 0.95            # discount factor
+EPSILON_START = 1.0
+EPSILON_MIN = 0.05
+EPSILON_DECAY = 0.998   # multiplied in after every episode
+
+# --- Files ---
+QTABLE_FILE = "qtable.json"
+STATS_FILE = "stats.json"
